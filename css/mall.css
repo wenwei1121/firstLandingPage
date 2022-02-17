@@ -1,0 +1,378 @@
+#mall-title{
+    width: 100%;
+    text-align: center;
+    padding-top: 200px;
+}
+
+#mall-header h2{
+    font-size: 3.6vw;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.main-content{
+    width: 100%;
+    margin: 5% 0;
+    display: flex;
+}
+
+.sidebar{
+    width: 30%;
+}
+
+.sidebar__inner{
+    padding: 0;
+    position: relative;
+    text-align: center;
+    transform: translate(0, 0);
+    transform: translate3d(0, 0, 0);
+    will-change: position, transform;
+}
+
+.sidebar__inner > ul{
+    margin-left: 170px;
+}
+
+.sidebar__inner > ul > li{
+    margin-bottom: 20px;
+}
+
+.sidebar__inner dt{
+    display: flex;
+    /* justify-content: flex-start; */
+}
+
+.sidebar__inner > ul > li > dl > dt > a{
+    font-size: 1.8rem;
+    letter-spacing: 0.2rem;
+    width: 150px;
+}
+
+.sidebar-show-list{
+    width: calc(100% - 150px);
+}
+
+.sidebar-show-list .fa-caret-down{
+    color: rgba(0, 0, 0, 0.8);
+    transition: 0.5s;
+    font-size: 2rem;
+}
+
+.sidebar-show-list-japan .fa-caret-down,
+.sidebar-show-list-korea .fa-caret-down,
+.sidebar-show-list-west .fa-caret-down{
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.5rem;
+}
+
+.fa-caret-down:hover{
+    color: #79A1C0;
+    transition: 0.5s;
+}
+
+.change .fa-caret-down{
+    transform: rotate(180deg);
+}
+
+.sidebar-list,
+.sidebar-list-japan,
+.sidebar-list-korea,
+.sidebar-list-west{
+    display: none;
+}
+
+.sidebar-list > ul{
+    margin: 10px 0 0 50px;
+}
+
+.sidebar-list > ul > li{
+    text-align: start;
+    margin-bottom: 10px;
+}
+
+.sidebar-list > ul > li > dl > dt > a{
+    font-size: 1.5rem;
+    width: 60px;
+    letter-spacing: 0.2rem;
+}
+
+.sidebar-show-list-japan,
+.sidebar-show-list-korea,
+.sidebar-show-list-west{
+    text-align: center;
+    width: calc(80% - 60px);
+}
+
+.sidebar-list-japan > ul,
+.sidebar-list-korea > ul,
+.sidebar-list-west > ul{
+    margin: 6px 0 0 30px;
+}
+
+.sidebar-list-japan > ul > li,
+.sidebar-list-korea > ul > li,
+.sidebar-list-west > ul > li{
+    margin-bottom: 5px;
+}
+
+.sidebar-list-japan > ul > li > a,
+.sidebar-list-korea > ul > li > a,
+.sidebar-list-west > ul > li > a{
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+}
+
+.content{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+hr{
+    color: #79A1C0;
+    background-color: #79A1C0;
+}
+
+/*  */
+.clearfix:after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+
+.style-percent,
+.style-product{
+    margin-bottom: 4%;
+}
+
+.style-percent{
+    text-align: center;
+    margin-top: 4%;
+}
+
+.owl-theme .owl-nav{
+    position: absolute;
+    width: 100%;
+    top: 46%;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    height: 0;
+    z-index: 0;
+}
+
+.owl-theme .owl-nav .disabled{
+    opacity: 0;
+}
+
+.owl-theme .owl-nav [class*=owl-]{
+    margin: 0 25px;
+    border-radius: 0.2rem;
+}
+
+.owl-carousel .owl-nav button.owl-next, 
+.owl-carousel .owl-nav button.owl-prev{
+    background-color: #79A1C0;
+    width: 50px;
+}
+
+.owl-nav span{
+    color: seashell;
+    font-size: 3rem;
+}
+
+.owl-nav span:hover{
+    color: #79A1C0;
+}
+
+.owl-carousel .item{
+    width: 100%;
+}
+
+.owl-carousel .mall-product{
+    width: 100%;
+    margin: 0;
+}
+
+.owl-carousel input[type="button"]{
+    width: 150px;
+    padding: 8px 12px;
+    font-size: 0.6rem;
+    letter-spacing: 0.1rem;
+}
+
+.owl-carousel input[id="addtocard"]{
+    top: 36%;
+}
+
+.owl-carousel input[id="addtofitroom"]{
+    top: 55%;
+}
+
+@media only screen and (max-width:767px) {
+    #mall-title{
+        padding-top: 100px;
+    }
+
+    #mall-header h2{
+        font-size: 9vw;
+    }
+
+    .main-content{
+        margin: 7% 0;
+        flex-direction: column;
+    }
+    
+    .sidebar{
+        width: 100%;
+    }
+
+    .sidebar__inner{
+        position: unset !important;
+        width: 100% !important;
+    }
+
+    .sidebar__inner > ul{
+        display: flex;
+        margin-left: 25px;
+    }
+    
+    .sidebar__inner > ul > li{
+        margin: 0 25px 25px 0;
+    }
+
+    .sidebar__inner > ul > li > dl > dt > a{
+        font-size: 1.2rem;
+        width: 100%;
+    }
+
+    .sidebar-show-list{
+        width: 10%;
+    }
+
+    .sidebar-show-list .fa-caret-down{
+        font-size: 1.4rem;
+    }
+
+    .content{
+        width: 100%;
+    }
+
+    .owl-theme .owl-nav{
+        top: 33%;
+    }
+
+    hr{
+        height: 9px;
+    }
+
+    .style-percent,
+    .style-product{
+        margin-bottom: 8%;
+    }
+
+    .style-percent{
+        margin-top: 8%;
+    }
+
+    .owl-carousel input[id="addtocard"]{
+        left: 24.5%;
+    }
+    
+    .owl-carousel input[id="addtofitroom"]{
+        left: 24.5%;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    #mall-title{
+        padding-top: 150px;
+    }
+
+    #mall-header h2{
+        font-size: 6vw;
+    }
+
+    .main-content{
+        margin: 6% 0;
+    }
+
+    .owl-theme .owl-nav{
+        top: 32%;
+    }
+
+    .sidebar__inner > ul{
+        margin-left: 25px;
+    }
+    
+    .sidebar__inner > ul > li{
+        margin-bottom: 25px;
+    }
+
+    hr{
+        height: 7px;
+    }
+
+    .style-percent,
+    .style-product{
+        margin-bottom: 6%;
+    }
+
+    .style-percent{
+        margin-top: 6%;
+    }
+    .owl-carousel input[id="addtocard"]{
+        left: 32%;
+    }
+    
+    .owl-carousel input[id="addtofitroom"]{
+        left: 32%;
+    }
+}
+
+@media only screen and (min-width:992px) {
+    #mall-title{
+        padding-top: 200px;
+    }
+
+    #mall-header h2{
+        font-size: 3.6vw;
+    }
+
+    .main-content{
+        margin: 5% 0;
+    }
+
+    .owl-theme .owl-nav{
+        top: 46%;
+    }
+
+    .sidebar__inner > ul{
+        margin-left: 170px;
+    }
+    
+    .sidebar__inner > ul > li{
+        margin-bottom: 20px;
+    }
+
+    hr{
+        height: 5px;
+    }
+
+    .style-percent,
+    .style-product{
+        margin-bottom: 5%;
+    }
+
+    .style-percent{
+        margin-top: 5%;
+    }
+    .owl-carousel input[id="addtocard"]{
+        left: 30%;
+    }
+    
+    .owl-carousel input[id="addtofitroom"]{
+        left: 30%;
+    }
+}

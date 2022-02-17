@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="zh-hant-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- logo-icon -->
+    <link rel="icon" href="./logo-icon.ico">
+
+    <!-- Load an icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- icon-js -->
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+    <!-- jquery-ui-css -->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <!-- show-on-scroll -->
+    <link rel="stylesheet" href="./css/show-on-scroll.css">
+
+    <!-- img-hover-zoom-css -->
+    <link rel="stylesheet" href="./css/img-hover-zoom.css">
+
+    <!-- Sidebar-css -->
+    <link rel="stylesheet" href="./css/sidebar.css">
+
+    <!-- account-modal-css -->
+    <link rel="stylesheet" href="./css/account-modal.css">
+
+    <!-- progresscircle-css -->
+    <link rel="stylesheet" href="./css/progresscircle.css">
+
+    <!-- image-carousel-css -->
+    <link rel="stylesheet" href="./css/image-carousel.css">
+
+    <!-- 自己的css -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>穿流不息 DRESSUP ENDLESS</title>
+</head>
+<body>
+    <!-- 檔頭區  -->
+    <!-- navbar -->
+    <header id="wrap-navbar"> 
+        <div id="navbar" class="navbar-list">
+            <!-- logo -->
+            <h1 id="logo"><a href="./index.html"><img src="./images/logo.png" alt="logo"></a></h1>
+            <!-- min-width<=767-navbar-burger-icon -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <!-- nav -->
+            <nav>
+                <!-- menu -->
+                <ul class="menu">
+                    <li><a href="./news.html">NEWS</a></li>
+                    <li><a href="./mall.html">MALL</a></li>
+                    <li><a href="./fitroom.html">FITROOM</a></li>
+                </ul>
+            </nav>
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+            <div>
+                <ul class="icon-nav">
+                    <li><a id="cart" onclick="OpenSidebar()"><i class="fa fa-cart-plus"></i></a></li>
+                    <li><a id="account"><i class="fa fa-user"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section id="index-section">
+        <div class="banner-video">
+            <div class="banner-text">
+                <h1>DRESSUP ENDLESS</h1>
+                <h2>Looking for someone who losts in outfit</h2>
+                <button>VIEW MORE</button>
+            </div>   
+            <div class="index-mask"></div>
+            <video src="./video/banner.mp4" autoplay loop muted></video>
+        </div>
+        <div class="index-news">
+            <div class="carousel">
+                <div class="carousel__nav">
+                    <span id="moveLeft" class="carousel__arrow">
+                        <svg class="carousel__icon" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
+                        </svg>
+                    </span>
+                    <span id="moveRight" class="carousel__arrow" >
+                        <svg class="carousel__icon"  width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+                        </svg>    
+                    </span>
+                </div>
+                <div class="carousel-item carousel-item--1">
+                    <div class="carousel-item__image"></div>
+                    <div class="carousel-item__info">
+                        <div class="carousel-item__container">
+                            <h2 class="carousel-item__subtitle">韓系休閒</h2>
+                            <h1 class="carousel-item__title">長版大衣</h1>
+                            <p class="carousel-item__description">寒冷的冬天,就是要穿上韓系長版大衣,能保暖又能保持穿搭的美感</p>
+                            <p class="carousel-item__btn">$1699</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-item--2">
+                    <div class="carousel-item__image"></div>
+                    <div class="carousel-item__info">
+                        <div class="carousel-item__container">
+                            <h2 class="carousel-item__subtitle">韓系休閒</h2>
+                            <h1 class="carousel-item__title">長版大衣</h1>
+                            <p class="carousel-item__description">寒冷的冬天,就是要穿上韓系長版大衣,能保暖又能保持穿搭的美感</p>
+                            <p class="carousel-item__btn">$1699</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-item--3">
+                    <div class="carousel-item__image"></div>
+                    <div class="carousel-item__info">
+                        <div class="carousel-item__container">
+                            <h2 class="carousel-item__subtitle">韓系休閒</h2>
+                            <h1 class="carousel-item__title">長版大衣</h1>
+                            <p class="carousel-item__description">寒冷的冬天,就是要穿上韓系長版大衣,能保暖又能保持穿搭的美感</p>
+                            <p class="carousel-item__btn">$1699</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-item--4">
+                    <div class="carousel-item__image"></div>
+                    <div class="carousel-item__info">
+                        <div class="carousel-item__container">
+                            <h2 class="carousel-item__subtitle">韓系休閒</h2>
+                            <h1 class="carousel-item__title">長版大衣</h1>
+                            <p class="carousel-item__description">寒冷的冬天,就是要穿上韓系長版大衣,能保暖又能保持穿搭的美感</p>
+                            <p class="carousel-item__btn">$1699</p>
+                        </div>
+                    </div>
+                </div>       
+                <div class="carousel-item carousel-item--5">
+                    <div class="carousel-item__image"></div>
+                    <div class="carousel-item__info">
+                        <div class="carousel-item__container">
+                            <h2 class="carousel-item__subtitle">韓系休閒</h2>
+                            <h1 class="carousel-item__title">長版大衣</h1>
+                            <p class="carousel-item__description">寒冷的冬天,就是要穿上韓系長版大衣,能保暖又能保持穿搭的美感</p>
+                            <p class="carousel-item__btn">$1699</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- cart-sidebar -->
+        <div id="mySidebar" class="cart-sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="CloseSidebar()">×</a>
+            <h1>CART</h1>
+            <form action="/cart" method="POST" novalidate>
+                <ul class="cart-card scroll-display">
+                    <li class="card">
+                        <dl>
+                            <img src="./images/new-4.jpg" alt="">
+                            <dt>
+                                <p>棉褲</p>
+                                <p>日系休閒</p>
+                                <p>$999</p>
+                            </dt>
+                            <dd>
+                                <a href="javascript:void(0)" class="removebtn" onclick="RemoveCard()">×</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="card">
+                        <dl>
+                            <img src="./images/new-4.jpg" alt="">
+                            <dt>
+                                <p>棉褲</p>
+                                <p>日系休閒</p>
+                                <p>$999</p>
+                            </dt>
+                            <dd>
+                                <a href="javascript:void(0)" class="removebtn" onclick="RemoveCard()">×</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="card">
+                        <dl>
+                            <img src="./images/new-4.jpg" alt="">
+                            <dt>
+                                <p>棉褲</p>
+                                <p>日系休閒</p>
+                                <p>$999</p>
+                            </dt>
+                            <dd>
+                                <a href="javascript:void(0)" class="removebtn" onclick="RemoveCard()">×</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="card">
+                        <dl>
+                            <img src="./images/new-4.jpg" alt="">
+                            <dt>
+                                <p>棉褲</p>
+                                <p>日系休閒</p>
+                                <p>$999</p>
+                            </dt>
+                            <dd>
+                                <a href="javascript:void(0)" class="removebtn" onclick="RemoveCard()">×</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="card">
+                        <dl>
+                            <img src="./images/new-4.jpg" alt="">
+                            <dt>
+                                <p>棉褲</p>
+                                <p>日系休閒</p>
+                                <p>$999</p>
+                            </dt>
+                            <dd>
+                                <a href="javascript:void(0)" class="removebtn" onclick="RemoveCard()">×</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="card">
+                        <dl>
+                            <img src="./images/new-4.jpg" alt="">
+                            <dt>
+                                <p>棉褲</p>
+                                <p>日系休閒</p>
+                                <p>$999</p>
+                            </dt>
+                            <dd>
+                                <a href="javascript:void(0)" class="removebtn" onclick="RemoveCard()">×</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="card">
+                        <dl>
+                            <img src="./images/new-4.jpg" alt="">
+                            <dt>
+                                <p>棉褲</p>
+                                <p>日系休閒</p>
+                                <p>$999</p>
+                            </dt>
+                            <dd>
+                                <a href="javascript:void(0)" class="removebtn" onclick="RemoveCard()">×</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="card">
+                        <dl>
+                            <img src="./images/new-4.jpg" alt="">
+                            <dt>
+                                <p>棉褲</p>
+                                <p>日系休閒</p>
+                                <p>$999</p>
+                            </dt>
+                            <dd>
+                                <a href="javascript:void(0)" class="removebtn" onclick="RemoveCard()">×</a>
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+                <dl class="cart-cost">
+                    <dt>小計</dt>
+                    <dd class="cost">0</dd>
+                </dl>
+                <div class="cart-form-input">
+                    <input class="submit" name="check out" type="submit" value="CHECK OUT">
+                </div>
+            </form>
+        </div>
+        <!-- account-modal -->
+        <div id="myModal" class="modal">
+            <div class="modal-content scroll-display">
+                <div class="modal-header">
+                    <div class="toggle-btn-box">
+                        <div id="switch-btn"></div>
+                        <button type="button" id="toggle-login-btn" onclick="login()">SIGN IN</button>
+                        <button type="button" id="toggle-register-btn" onclick="register()">SIGN UP</button>
+                    </div>
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <!-- sign-in-body -->
+                    <div id="login" class="signin-body">
+                        <h2>SING IN</h2>
+                        <form action="" method="post">
+                            <ul>
+                                <li>
+                                    <dl>
+                                        <dt>"USER ID"</dt>
+                                        <dd><input type="text" name="contact[user-id]" required></dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>"PASSWORD"</dt>
+                                        <dd><input type="password" name="contact[password]" required></dd>
+                                    </dl>
+                                </li>
+                                <div class="signin-subtxt">
+                                    <a href="#" class="forget-txt">FORGET PASSWORD?</a>
+                                    <div>
+                                        <input type="checkbox" class="check-box"><span>REMEMBER USER ID</span>
+                                    </div>
+                                </div>
+                                <div class="form-signin-btn">
+                                    <input class="signin-submit" name="submit" type="submit" value="LOGIN">
+                                </div>
+                            </ul>
+                        </form>
+                        <h2>OR</h2>
+                        <div class="social-media-signin-box">
+                            <button class="social-media-signin" type="button"><i class="fa fa-facebook"></i><span>Use Facebook ID Login</span></button>
+                            <button class="social-media-signin" type="button"><i class="fa fa-google"></i><span>Use Google ID Login</span></button>
+                            <button class="social-media-signin" type="button"><i class="fa fa-apple"></i><span>Use Apple ID Login</span></button>
+                        </div>
+                    </div>
+                    <!-- sign-in-body -->
+                    <!-- sign-up-body -->
+                    <div id="register" class="signin-body">
+                        <h2>SING UP</h2>
+                        <form action="" method="post">
+                            <ul>
+                                <li>
+                                    <dl>
+                                        <dt>"NAME"</dt>
+                                        <dd><input type="text" name="contact[name]" required></dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>"USER ID"</dt>
+                                        <dd><input type="text" name="contact[user-id]" required></dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>"PASSWORD"</dt>
+                                        <dd><input type="password" name="contact[password]" required></dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>"TEL"</dt>
+                                        <dd><input type="text" name="contact[tel]" required></dd>
+                                    </dl>
+                                </li>
+                                <div class="signin-subtxt">
+                                    <div>
+                                        <input type="checkbox" class="check-box"><span>I AGREE!</span>
+                                    </div>
+                                </div>
+                                <div class="form-signin-btn">
+                                    <input class="signin-submit" name="submit" type="submit" value="REGISTER">
+                                </div>
+                            </ul>
+                        </form>
+                        <h2>OR</h2>
+                        <div class="social-media-signin-box">
+                            <button class="social-media-signin" type="button"><i class="fa fa-facebook"></i><span>Use Facebook ID Login</span></button>
+                            <button class="social-media-signin" type="button"><i class="fa fa-google"></i><span>Use Google ID Login</span></button>
+                            <button class="social-media-signin" type="button"><i class="fa fa-apple"></i><span>Use Apple ID Login</span></button>
+                        </div>
+                    </div>
+                    <!-- sign-up-body -->
+                </div>
+            </div>
+        </div>
+        <!-- account-modal -->
+    <!-- 概念區 -->
+    <section id="concept">
+        <div class="concept-text">
+            <p class="up-on-scroll">
+                現代慵懶生活風格再加上疫情影響<br>
+                大多數人線上購物代替出門<br>
+                雖然方便卻不知道物品的材質及尺寸<br>
+                往往不滿意就得退貨又浪費很多時間<br>
+                所以我們做出穿流不息的電商系統<br>
+                以創新的方式解決現代問題
+            </p>
+            <button class="up-on-scroll">READ MORE</button>
+        </div>        
+    </section>
+    <!-- 功能特色介紹 -->
+    <section id="intro-function">
+        <div class="intro-conformity">
+            <div class="intro-video video-show-on-scroll">      
+                <video src="./video/intro-ar.mp4" autoplay muted loop></video>
+            </div>
+            <div class="intro-descripe">
+                <div class="intro-decoration">
+                        <div class="circlechart intro-circlechart left-on-scroll" data-percentage="90">韓系古著</div>
+                </div>
+                <div class="intro-text">
+                    <div class="text-r left-on-scroll">
+                        <h2>推薦與適合度</h2>
+                        <p>
+                            針對個人化的服裝搭配<br>
+                            不同搭配都有相對的百分比適合度<br>
+                            找到適合你的衣服<br>
+                        </p>
+                        <button>READ MORE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="intro-ar">
+            <div class="intro-descripe">
+                <div class="intro-decoration">
+                    <div class="wrap-intro-decoration">
+                    </div>
+                </div>
+                <div class="intro-text">
+                    <div class="text-l right-on-scroll">
+                        <h2>AR技術</h2>
+                        <p>
+                            解決以往電商的缺點<br>
+                            無法得知尺寸是否適合自己<br>
+                            擁有專屬自己的線上更衣室
+                        </p>
+                        <button>READ MORE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="intro-video video-show-on-scroll">      
+                <video src="./video/intro-ar.mp4" autoplay muted loop></video>
+            </div>
+        </div>
+        <div class="intro-media">
+            <div class="intro-video video-show-on-scroll">      
+                <video src="./video/intro-ar.mp4" autoplay muted loop></video>
+            </div>
+            <div class="intro-descripe">
+                <div class="intro-decoration">
+                    <div class="wrap-intro-decoration">
+                    </div>
+                </div>
+                <div class="intro-text">
+                    <div class="wrap-intro-text text-r left-on-scroll">
+                        <h2>即時分享</h2>
+                        <p>
+                            透過社群媒體分享給朋友看<br>
+                            立即得到回饋<br>
+                            並給予建議
+                        </p>
+                        <button>READ MORE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 衣服來源 -->
+    <section id="clothes-src">
+        <div class="clothes-src-left">
+            <div class="clothes-src-left-text">
+                <div class="decoration"></div>
+                <h3 class="right-on-scroll">衣服來源</h3>
+            </div>
+            <div class="clothes-src-left-img up-on-scroll">
+                <img src="./images/cloths-src.jpg" alt="cloths-src">
+            </div>
+        </div>
+        <div class="clothes-src-right">
+            <div class="clothes-src-right-div">
+                <div class="decoration2"></div>
+            </div>
+            <div class="clothes-src-right-div">
+                
+            </div>
+            <div class="clothes-src-right-div">
+                <div class="clothes-src-right-div-wrap up-on-scroll">
+                    <p>
+                        與各個有名的品牌合作<br>
+                        讓使用者知道更多品牌
+                    </p>
+                    <button>READ MORE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- WHY NEED? -->
+    <section id="why">
+        <div class="why-title">
+            <div class="why-border up-on-scroll">
+                <h2>為何你需要這網站?</h2>
+            </div>
+        </div>
+        <div class="why-list up-on-scroll">
+            <div class="why-list-div">
+                <h2>01</h2>
+                <h3>不需要出門</h3>
+            </div>
+            <div class="why-list-div">
+                <h2>02</h2>
+                <h3>消耗時間少</h3>
+            </div>
+            <div class="why-list-div">
+                <h2>03</h2>
+                <h3>準確性消費</h3>
+            </div>
+        </div>
+    </section>
+    <!-- 最新 -->
+    <section id="news">
+        <p>NEWS</p>
+        <div class="wrapper up-on-scroll">
+            <div class="grandparent">
+                <div class="parent" onclick="">
+                    <div class="child bg-one">
+                    </div>
+                </div>
+                <div class="describe">
+                    <dl>
+                        <dt>新商品開賣,快查看與它的適合度</dt>
+                        <dd>2021.05.03</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="grandparent">        
+                <div class="parent right" onclick="">
+                    <div class="child bg-two">
+                    </div>
+                </div>
+                <div class="describe">
+                    <dl>
+                        <dt>與某某廠商合作,新某某商品即將推出</dt>
+                        <dd>2021.05.01</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="grandparent"> 
+                <div class="parent" onclick="">
+                    <div class="child bg-three">
+                    </div>
+                </div>
+                <div class="describe">
+                    <dl>
+                        <dt>全新特價優惠</dt>
+                        <dd>2021.05.03</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="grandparent"> 
+                <div class="parent right" onclick="">
+                    <div class="child bg-four">
+                    </div>
+                </div>
+                <div class="describe">
+                    <dl>
+                        <dt>功能更改</dt>
+                        <dd>2021.05.05</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <div class="news-btn up-on-scroll">
+            <button onclick="window.location.href='news.html'">VIEW MORE</button>
+        </div>
+    </section>
+    <!-- 頁腳 -->
+    <footer>
+        <div class="footer-contact">
+            <div class="footer-contact-left">
+                <button onclick="window.location.href='contact.html'">CONTACT US</button>
+                <p>TEL:0998989898</p>
+                <div class="footer-icon">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                </div>
+            </div>
+            <div class="footer-contact-right">
+                <h1 id="logo"><a href="./index.html"><img src="./images/logo.png" alt="logo"></a></h1>
+                <p>Copyright(C) 穿流不息DRESSUP-ENDLESS</p>
+            </div>
+        </div>
+        <div class="footer-decoration">
+            <h3>DRESSUP</h3>
+            <button class="go-top" onclick="topFunction()"><i class='fas fa fa-caret-up'></i></button>
+            <h3>ENDLESS</h3>
+        </div>
+    </footer>
+
+    <!-- jquery-ui-js -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- 原生碼 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- show-on-scroll-js -->
+    <script src="./script/show-on-scroll.js"></script>
+    
+    <!-- Sidebar-js -->
+    <script src="./script/sidebar.js"></script>
+
+    <!-- account-modal-js -->
+    <script src="./script/account-modal.js"></script>
+
+    <!-- progresscircle-js -->
+    <script src="./script/progresscircle.js"></script>
+
+    <!-- image-carousel-js -->
+    <script src="./script/image-carousel.js"></script>
+
+    <!-- 自己的js -->
+    <script src="./script/main.js"></script>
+    </body>
+</html>     

@@ -1,0 +1,118 @@
+#news-title{
+    width: 100%;
+    text-align: center;
+}
+
+h1{
+    letter-spacing: 0.5rem;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+/* wrap-single-product-css */
+.wrap-single-product{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.news-product-card{
+    display: inline-block;
+}
+
+.news-product-card input[id="addtocard"]{
+    top: 31%;
+}
+
+.news-product-card input[id="addtofitroom"]{
+    top: 56%;
+}
+
+@media only screen and (max-width:767px) {
+    #news-title{
+        padding-top: 100px;
+    }
+
+    h1{
+        font-size: 9vw;
+    } 
+
+    #news-section{
+        height: auto;
+        margin: 7% 0;
+    }
+
+    .wrap-single-product{
+        padding: 0 8%;
+    }
+
+    .news-product-card{
+        width: 100%;
+        margin: 3% 0;
+    }
+    
+    .news-product-card input[id="addtocard"]{
+        left: 25%;
+    }
+    
+    .news-product-card input[id="addtofitroom"]{
+        left: 25%;
+    }
+    .describe dt{
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    #news-title{
+        padding-top: 150px;
+    }
+    h1{
+        font-size: 6vw;
+    } 
+    #news-section{
+        height: auto;
+        margin: 6% 0;
+    }
+    .news-product-card{
+        width: 40%;
+        margin: 2%;
+    }
+    
+    .news-product-card input[id="addtocard"]{
+        left: 17.5%;
+    }
+    
+    .news-product-card input[id="addtofitroom"]{
+        left: 17.5%;
+    }
+}
+
+@media only screen and (min-width:992px) {
+    #news-title{
+        padding-top: 200px;
+    }
+    h1{
+        font-size: 3.6vw;
+    } 
+    #news-section{
+        height: 100vh;
+        margin: 5% 0;
+    }
+    .news-product-card{
+        width: 20%;
+        margin: 1%;
+    }
+    
+    .news-product-card input[id="addtocard"]{
+        top: 31%;
+        left: 23%;
+    }
+    
+    .news-product-card input[id="addtofitroom"]{
+        top: 56%;
+        left: 23%;
+    }
+}

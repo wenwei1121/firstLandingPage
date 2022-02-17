@@ -1,0 +1,170 @@
+#fitroom-section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+#video{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.wardrobe{
+    background-color: seashell;
+    border-radius: 0.2rem 0 0 0.2rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.wardrobe-title{
+    width: 100%;
+    padding: 3% 7%;
+}
+
+.wardrobe-title h3{
+    font-size: 3rem
+}
+
+.wardrobe-toggle{
+    width: 100%;
+    height: 6vh;
+}
+
+.wardrobe-products{
+    overflow-y: scroll;
+    padding: 0 2%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.wardrobe-card{
+    width: 40%;
+    margin: 0 4% 2% 4%;
+}
+
+.wardrobe-card img{
+    width: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.wardrobe-card img:hover{
+    transform: scale(1.05);
+}
+
+.wardrobe-card-text{
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wardrobe-card-text h3{
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+    color: rgba(0, 0, 0, 0.8);    
+}
+
+/* breadcrumb */
+ul.breadcrumb {
+    padding: 0 7%;
+    list-style: none;
+}
+ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+}
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+ul.breadcrumb li a {
+    color: rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+}
+
+ul.breadcrumb li a:hover{
+    color: #79A1C0;
+}
+
+@media only screen and (max-width:767px){
+    .wardrobe{
+        border-radius: 0.2rem 0 0 0.2rem;
+        bottom: 0;
+        overflow-x: auto;
+        width:100%;
+        height: 50vh;
+    }
+
+    .wardrobe-title{
+        padding: 2% 5%;
+    }
+
+    .wardrobe-title h3{
+        font-size: 2.2rem
+    }
+
+    .wardrobe-toggle{
+        height: 4vh;
+    }
+
+    .wardrobe-products{
+        margin-top: 3%;
+        height: 32vh;
+    }
+
+    .wardrobe-card img{
+        height: 75%;
+    }
+    
+    .wardrobe-card img:hover{
+        transform: scale(1.05);
+    }
+    
+    .wardrobe-card-text{
+        margin-top: 2%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .wardrobe-card-text h3{
+        font-size: 1.2rem;
+        letter-spacing: 0.2rem;
+        color: rgba(0, 0, 0, 0.8);    
+    }
+}
+
+@media only screen and (min-width:768px){
+    .wardrobe{
+        width:50%;
+        height: 50vh;
+    }
+    
+    .wardrobe-title{
+        height: 8vh;
+    }
+
+    .wardrobe-products{
+        height: 34vh;
+    }
+}
+
+@media only screen and (min-width:992px){
+    .wardrobe{
+        width:30%;
+        height: 80vh;
+    }
+    
+    .wardrobe-title{
+        height: 10vh;
+    }
+
+    .wardrobe-products{
+        height: 60vh;
+    }
+}

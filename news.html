@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="zh-hant-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- logo-icon -->
+    <link rel="icon" href="./logo-icon.ico">
+
+    <!-- Load an icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- icon-js -->
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+    <!-- jquery-ui-css -->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <!-- img-hover-zoom-css -->
+    <link rel="stylesheet" href="./css/img-hover-zoom.css">
+
+    <!-- account-modal-css -->
+    <link rel="stylesheet" href="./css/account-modal.css">
+
+    <!-- Sidebar-css -->
+    <link rel="stylesheet" href="./css/sidebar.css">
+
+    <!-- news-css -->
+    <link rel="stylesheet" href="./css/news.css">
+
+    <!-- 自己的css -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>穿流不息 DRESSUP ENDLESS</title>
+</head>
+<body id="sidebarmove">
+    <header id="wrap-navbar"> 
+        <div id="navbar" class="navbar-list">
+            <!-- logo -->
+            <h1 id="logo"><a href="./index.html"><img src="./images/logo.png" alt="logo"></a></h1>
+            <!-- min-width<=767-navbar-burger-icon -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <!-- nav -->
+            <nav>
+                <!-- menu -->
+                <ul class="menu">
+                    <li><a href="./news.html">NEWS</a></li>
+                    <li><a href="./mall.html">MALL</a></li>
+                    <li><a href="./fitroom.html">FITROOM</a></li>
+                </ul>
+            </nav>
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+            <div>
+                <ul class="icon-nav">
+                    <li><a id="cart" onclick="OpenSidebar()"><i class="fa fa-cart-plus"></i></a></li>
+                    <li><a id="account"><i class="fa fa-user"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+        <div id="mySidebar" class="cart-sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="CloseSidebar()">×</a>
+            <h1>CART</h1>
+            <form action="/cart" method="POST" novalidate>
+                <ul class="cart-card scroll-display">
+                    <li class="card">
+                        <dl>
+                            <img src="./images/new-4.jpg" alt="">
+                            <dt>
+                                <p>棉褲</p>
+                                <p>日系休閒</p>
+                                <p>$999</p>
+                            </dt>
+                            <dd>
+                                <a href="javascript:void(0)" class="removebtn" onclick="RemoveCard()">×</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="card">
+                        <dl>
+                            <img src="./images/new-4.jpg" alt="">
+                            <dt>
+                                <p>棉褲</p>
+                                <p>日系休閒</p>
+                                <p>$999</p>
+                            </dt>
+                            <dd>
+                                <a href="javascript:void(0)" class="removebtn" onclick="RemoveCard()">×</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="card">
+                        <dl>
+                            <img src="./images/new-4.jpg" alt="">
+                            <dt>
+                                <p>棉褲</p>
+                                <p>日系休閒</p>
+                                <p>$999</p>
+                            </dt>
+                            <dd>
+                                <a href="javascript:void(0)" class="removebtn" onclick="RemoveCard()">×</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="card">
+                        <dl>
+                            <img src="./images/new-4.jpg" alt="">
+                            <dt>
+                                <p>棉褲</p>
+                                <p>日系休閒</p>
+                                <p>$999</p>
+                            </dt>
+                            <dd>
+                                <a href="javascript:void(0)" class="removebtn" onclick="RemoveCard()">×</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="card">
+                        <dl>
+                            <img src="./images/new-4.jpg" alt="">
+                            <dt>
+                                <p>棉褲</p>
+                                <p>日系休閒</p>
+                                <p>$999</p>
+                            </dt>
+                            <dd>
+                                <a href="javascript:void(0)" class="removebtn" onclick="RemoveCard()">×</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="card">
+                        <dl>
+                            <img src="./images/new-4.jpg" alt="">
+                            <dt>
+                                <p>棉褲</p>
+                                <p>日系休閒</p>
+                                <p>$999</p>
+                            </dt>
+                            <dd>
+                                <a href="javascript:void(0)" class="removebtn" onclick="RemoveCard()">×</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="card">
+                        <dl>
+                            <img src="./images/new-4.jpg" alt="">
+                            <dt>
+                                <p>棉褲</p>
+                                <p>日系休閒</p>
+                                <p>$999</p>
+                            </dt>
+                            <dd>
+                                <a href="javascript:void(0)" class="removebtn" onclick="RemoveCard()">×</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="card">
+                        <dl>
+                            <img src="./images/new-4.jpg" alt="">
+                            <dt>
+                                <p>棉褲</p>
+                                <p>日系休閒</p>
+                                <p>$999</p>
+                            </dt>
+                            <dd>
+                                <a href="javascript:void(0)" class="removebtn" onclick="RemoveCard()">×</a>
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+                <dl class="cart-cost">
+                    <dt>小計</dt>
+                    <dd class="cost">0</dd>
+                </dl>
+                <div class="cart-form-input">
+                    <input class="submit" name="check out" type="submit" value="CHECK OUT">
+                </div>
+            </form>
+        </div>
+        <!-- account-modal -->
+        <div id="myModal" class="modal">
+            <div class="modal-content scroll-display">
+                <div class="modal-header">
+                    <div class="toggle-btn-box">
+                        <div id="switch-btn"></div>
+                        <button type="button" id="toggle-login-btn" onclick="login()">SIGN IN</button>
+                        <button type="button" id="toggle-register-btn" onclick="register()">SIGN UP</button>
+                    </div>
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <!-- sign-in-body -->
+                    <div id="login" class="signin-body">
+                        <h2>SING IN</h2>
+                        <form action="" method="post">
+                            <ul>
+                                <li>
+                                    <dl>
+                                        <dt>"USER ID"</dt>
+                                        <dd><input type="text" name="contact[user-id]" required></dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>"PASSWORD"</dt>
+                                        <dd><input type="password" name="contact[password]" required></dd>
+                                    </dl>
+                                </li>
+                                <div class="signin-subtxt">
+                                    <a href="#" class="forget-txt">FORGET PASSWORD?</a>
+                                    <div>
+                                        <input type="checkbox" class="check-box"><span>REMEMBER USER ID</span>
+                                    </div>
+                                </div>
+                                <div class="form-signin-btn">
+                                    <input class="signin-submit" name="submit" type="submit" value="LOGIN">
+                                </div>
+                            </ul>
+                        </form>
+                        <h2>OR</h2>
+                        <div class="social-media-signin-box">
+                            <button class="social-media-signin" type="button"><i class="fa fa-facebook"></i>Use Facebook ID Login</button>
+                            <button class="social-media-signin" type="button"><i class="fa fa-google"></i>Use Google ID Login</button>
+                            <button class="social-media-signin" type="button"><i class="fa fa-apple"></i>Use Apple ID Login</button>
+                        </div>
+                    </div>
+                    <!-- sign-in-body -->
+                    <!-- sign-up-body -->
+                    <div id="register" class="signin-body">
+                        <h2>SING UP</h2>
+                        <form action="" method="post">
+                            <ul>
+                                <li>
+                                    <dl>
+                                        <dt>"NAME"</dt>
+                                        <dd><input type="text" name="contact[name]" required></dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>"USER ID"</dt>
+                                        <dd><input type="text" name="contact[user-id]" required></dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>"PASSWORD"</dt>
+                                        <dd><input type="password" name="contact[password]" required></dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>"TEL"</dt>
+                                        <dd><input type="text" name="contact[tel]" required></dd>
+                                    </dl>
+                                </li>
+                                <div class="signin-subtxt">
+                                    <div>
+                                        <input type="checkbox" class="check-box"><span>I AGREE!</span>
+                                    </div>
+                                </div>
+                                <div class="form-signin-btn">
+                                    <input class="signin-submit" name="submit" type="submit" value="REGISTER">
+                                </div>
+                            </ul>
+                        </form>
+                        <h2>OR</h2>
+                        <div class="social-media-signin-box">
+                            <button class="social-media-signin" type="button"><i class="fa fa-facebook"></i>Use Facebook ID Login</button>
+                            <button class="social-media-signin" type="button"><i class="fa fa-google"></i>Use Google ID Login</button>
+                            <button class="social-media-signin" type="button"><i class="fa fa-apple"></i>Use Apple ID Login</button>
+                        </div>
+                    </div>
+                    <!-- sign-up-body -->
+                </div>
+            </div>
+        </div>
+        <!-- account-modal -->
+    <!-- NEWS-主頁 -->
+    <div id="news-title">
+            <h1>NEWS</h1>
+    </div>
+    <section id="news-section">
+        <div class="wrap-single-product">
+            <div class="grandparent news-product-card"> 
+                <div class="parent right" onclick="">
+                    <div class="child bg-four">
+                        <input type="button" id="addtocard" value="ADD TO CARD" onclick="">
+                        <input type="button" id="addtofitroom" value="ADD TO FITROOM" onclick="">
+                    </div>
+                </div>
+                <div class="describe">
+                    <dl>
+                        <dt>功能更改</dt>
+                        <dd>2021.05.05</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="grandparent news-product-card"> 
+                <div class="parent right" onclick="">
+                    <div class="child bg-four">
+                        <input type="button" id="addtocard" value="ADD TO CARD" onclick="">
+                        <input type="button" id="addtofitroom" value="ADD TO FITROOM" onclick="">
+                    </div>
+                </div>
+                <div class="describe">
+                    <dl>
+                        <dt>功能更改</dt>
+                        <dd>2021.05.05</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="grandparent news-product-card"> 
+                <div class="parent right" onclick="">
+                    <div class="child bg-four">
+                        <input type="button" id="addtocard" value="ADD TO CARD" onclick="">
+                        <input type="button" id="addtofitroom" value="ADD TO FITROOM" onclick="">
+                    </div>
+                </div>
+                <div class="describe">
+                    <dl>
+                        <dt>功能更改</dt>
+                        <dd>2021.05.05</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="grandparent news-product-card"> 
+                <div class="parent right" onclick="">
+                    <div class="child bg-four">
+                        <input type="button" id="addtocard" value="ADD TO CARD" onclick="">
+                        <input type="button" id="addtofitroom" value="ADD TO FITROOM" onclick="">
+                    </div>
+                </div>
+                <div class="describe">
+                    <dl>
+                        <dt>功能更改</dt>
+                        <dd>2021.05.05</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="grandparent news-product-card"> 
+                <div class="parent right" onclick="">
+                    <div class="child bg-four">
+                        <input type="button" id="addtocard" value="ADD TO CARD" onclick="">
+                        <input type="button" id="addtofitroom" value="ADD TO FITROOM" onclick="">
+                    </div>
+                </div>
+                <div class="describe">
+                    <dl>
+                        <dt>功能更改</dt>
+                        <dd>2021.05.05</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="grandparent news-product-card"> 
+                <div class="parent right" onclick="">
+                    <div class="child bg-four">
+                        <input type="button" id="addtocard" value="ADD TO CARD" onclick="">
+                        <input type="button" id="addtofitroom" value="ADD TO FITROOM" onclick="">
+                    </div>
+                </div>
+                <div class="describe">
+                    <dl>
+                        <dt>功能更改</dt>
+                        <dd>2021.05.05</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="grandparent news-product-card"> 
+                <div class="parent right" onclick="">
+                    <div class="child bg-four">
+                        <input type="button" id="addtocard" value="ADD TO CARD" onclick="">
+                        <input type="button" id="addtofitroom" value="ADD TO FITROOM" onclick="">
+                    </div>
+                </div>
+                <div class="describe">
+                    <dl>
+                        <dt>功能更改</dt>
+                        <dd>2021.05.05</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="grandparent news-product-card"> 
+                <div class="parent right" onclick="">
+                    <div class="child bg-four">
+                        <input type="button" id="addtocard" value="ADD TO CARD" onclick="">
+                        <input type="button" id="addtofitroom" value="ADD TO FITROOM" onclick="">
+                    </div>
+                </div>
+                <div class="describe">
+                    <dl>
+                        <dt>功能更改</dt>
+                        <dd>2021.05.05</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 頁腳 -->
+    <footer id="sidebarmove">
+        <div class="footer-contact">
+            <div class="footer-contact-left">
+                <button onclick="window.location.href='contact.html'">CONTACT US</button>
+                <p>TEL:0998989898</p>
+                <div class="footer-icon">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                </div>
+            </div>
+            <div class="footer-contact-right">
+                <h1 id="logo"><a href="./index.html"><img src="./images/logo.png" alt="logo"></a></h1>
+                <p>Copyright(C) 穿流不息DRESSUP-ENDLESS</p>
+            </div>
+        </div>
+        <div class="footer-decoration">
+            <h3>DRESSUP</h3>
+            <button class="go-top" onclick="topFunction()"><i class='fas fa fa-caret-up'></i></button>
+            <h3>ENDLESS</h3>
+        </div>
+    </footer>
+
+    <!-- jquery-ui-js -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- 原生碼 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- Sidebar-js -->
+    <script src="./script/sidebar.js"></script>
+
+    <!-- account-modal-js -->
+    <script src="./script/account-modal.js"></script>
+
+    <!-- 自己的js -->
+    <script src="./script/main.js"></script>
+</body>
+</html>     

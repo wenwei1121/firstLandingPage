@@ -1,0 +1,210 @@
+#contact-title{
+    text-align: center;
+}
+
+article{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin:5% 0;
+}
+
+h1{
+    font-size: 3.6vw;
+    letter-spacing: 0.5rem;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+#contact-wrap{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contact-wrap li{
+    margin-top: 5%;
+}
+
+#contact-wrap dl{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#contact-wrap dt{
+    color: rgba(0, 0, 0, 0.8);
+    text-align: initial;
+    letter-spacing: 0.3rem;
+}
+
+#contact-wrap input[type="text"],
+#contact-wrap select{
+    color: rgba(147, 149, 151, 1);
+    border-radius: 0.2rem;
+    border: 1px solid rgba(147, 149, 151, 1);
+    background-color: seashell;
+}
+
+#contact-wrap textarea{
+    background-color: seashell;
+    color: rgba(147, 149, 151, 1);
+}
+
+#contact-wrap input[type="text"]:focus,
+#contact-wrap select:focus,
+#contact-wrap textarea:focus{
+    outline: none;
+    border: 1px solid #79A1C0;
+}
+
+option:checked {
+    color: seashell;
+    background-color: #79A1C0;
+  }
+
+/* CONTACT-SUBMIT-BTN-EFFECT */
+input[class=contact-submit]{
+    background-color: #79A1C0;
+    border-radius: 0.2rem;
+    border: solid 2px #79A1C0;
+    color: seashell;
+    padding: 15px 25px;
+    text-decoration: none;
+    cursor: pointer;
+    width: 25%;
+    font-family: "Courgette", "taipeisanstc", "cursive";
+    letter-spacing: 0.5rem;
+    transition: color 0.3s ease-in-out;
+  }
+
+input[class=contact-submit]:hover{
+    background-color: seashell;
+    color: #79A1C0;
+  }
+
+@media only screen and (max-width:767px){
+    #contact-title{
+        padding-top: 100px;
+    }
+    h1{
+        font-size: 9vw;
+    }
+    #contact-wrap{
+        width: 80%;
+    }
+    #contact-wrap dl{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    #contact-wrap dt{
+        font-size: 5vw;
+        width: 100%;
+    }
+    #contact-wrap dd{
+        width: 100%;
+        margin-top: 3%;
+    }
+    #contact-wrap input[type="text"],
+    #contact-wrap select{
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 1.4rem;
+    }
+
+    #contact-wrap textarea{
+        width: 100%;
+        padding: 12px 20px;
+    }
+
+    .contact-form-btn{
+        margin-top: 7%;
+    }
+
+    /* CONTACT-SUBMIT-BTN-EFFECT */
+    input[class=contact-submit]{
+        padding: 12px 20px;
+        font-size: 1.2rem;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:768px){
+    #contact-title{
+        padding-top: 150px;
+    }
+    h1{
+        font-size: 6vw;
+    }
+    #contact-wrap{
+        width: 80%;
+    }
+    #contact-wrap dt{
+        font-size: 3.6vw;
+        width: 200px;
+    }
+    #contact-wrap dd{
+        width: calc(100% - 200px);
+    }
+    #contact-wrap input[type="text"],
+    #contact-wrap select{
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 1.5rem;
+    }
+
+    #contact-wrap textarea{
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 1.5rem;
+    }
+
+    .contact-form-btn{
+        margin-top: 6%;
+    }
+
+    /* CONTACT-SUBMIT-BTN-EFFECT */
+    input[class=contact-submit]{
+        padding: 12px 20px;
+        font-size: 1.4rem;
+        width: 30%;
+    }
+}
+
+@media only screen and (min-width:992px){
+    #contact-title{
+        padding-top: 200px;
+    }
+    h1{
+        font-size: 3.6vw;
+    }
+    #contact-wrap{
+        width: 50%;
+    }
+    #contact-wrap dt{
+        font-size: 2vw;
+        width: 350px;
+    }
+    #contact-wrap dd{
+        width: calc(100% - 350px);
+    }
+    #contact-wrap input[type="text"],
+    #contact-wrap select{
+        width: 100%;
+        padding: 15px 25px;
+        font-size: 1.8rem;
+    }
+
+    #contact-wrap textarea{
+        width: 100%;
+        padding: 15px 25px;
+        font-size: 1.8rem;
+    }
+
+    .contact-form-btn{
+        margin-top: 5%;
+    }
+
+    /* CONTACT-SUBMIT-BTN-EFFECT */
+    input[class=contact-submit]{
+        font-size: 1.6rem;
+    }
+}

@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+/* Skills bar effects */
+
+.skillbar {
+  position: relative;
+  display: inline-block;
+  margin: 20px 0 15px 0;
+  width: 100%;
+  background: #eee;
+  height: 35px;
+  width: 100%;
+}
+
+.skillbar-bar {
+  height: 35px;
+  width: 0;
+  background: #6adcfa;
+  display: inline-block;
+}
+
+.skill-bar-percent {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  font-size: 1rem;
+  height: 35px;
+  line-height: 35px;
+  color: rgba(0, 0, 0, 0.8);
+}
