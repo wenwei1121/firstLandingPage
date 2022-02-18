@@ -94,13 +94,16 @@ h1{
     #news-title{
         padding-top: 200px;
     }
-    h1{
+
+    #news-title h1{
         font-size: 3.6vw;
     } 
+    
     #news-section{
         height: 100vh;
         margin: 5% 0;
     }
+
     .news-product-card{
         width: 20%;
         margin: 1%;

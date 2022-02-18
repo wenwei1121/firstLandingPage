@@ -16,7 +16,7 @@ $(function(){
       var slide= current;
       if(next>total-1){
        slide=0;
-        current=0;
+       current=0;
       }
       if(next<0){
         slide=total - 1;
@@ -24,9 +24,6 @@ $(function(){
       }
       $('.carousel-item').eq(prev).removeClass('active');
       $('.carousel-item').eq(slide).addClass('active');
-      setTimeout(function(){
-  
-      },800);
       console.log('current '+current);
       console.log('prev '+prev);
     }

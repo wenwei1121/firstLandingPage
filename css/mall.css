@@ -4,8 +4,8 @@
     padding-top: 200px;
 }
 
-#mall-header h2{
-    font-size: 3.6vw;
+h1{
+    letter-spacing: 0.5rem;
     color: rgba(0, 0, 0, 0.8);
 }
 
@@ -215,7 +215,7 @@ hr{
         padding-top: 100px;
     }
 
-    #mall-header h2{
+    h1{
         font-size: 9vw;
     }
 
@@ -336,7 +336,7 @@ hr{
         padding-top: 200px;
     }
 
-    #mall-header h2{
+    #mall-title h1{
         font-size: 3.6vw;
     }
 
